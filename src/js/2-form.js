@@ -115,20 +115,20 @@ document.addEventListener('DOMContentLoaded', () => {
     formData.email = savedData.email || '';
     formData.message = savedData.message || '';
   }
-// });
+});
 
-// form.addEventListener('submit', event => {
-//   event.preventDefault();
+form.addEventListener('submit', event => {
+  event.preventDefault();
 
-//   if (formData.email.trim() === '' || formData.message.trim() === '') {
-//     alert('Please fill in all fields');
-//     return;
-//   }
-//   console.log(formData);
+  if (formData.email.trim() === '' || formData.message.trim() === '') {
+    alert('Please fill in all fields');
+    return;
+  }
+  console.log(formData);
 
-//   localStorage.removeItem('feedback-form-state');
+  localStorage.removeItem('feedback-form-state');
 
-//   formData.email = '';
-//   formData.message = '';
-//   form.reset();
-// });
+  formData.email = '';
+  formData.message = '';
+  form.reset();
+});
